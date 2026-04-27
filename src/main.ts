@@ -1,5 +1,6 @@
 import Phaser from 'phaser'
 import { GAME_WIDTH, GAME_HEIGHT } from './constants'
+import { initTouchControls } from './utils/touchControls'
 import { BootScene }             from './scenes/BootScene'
 import { TitleScene }            from './scenes/TitleScene'
 import { OpeningTitlesScene }    from './scenes/OpeningTitlesScene'
@@ -44,3 +45,4 @@ const config: Phaser.Types.Core.GameConfig = {
 }
 
 new Phaser.Game(config)
+initTouchControls()
