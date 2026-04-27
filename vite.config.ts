@@ -1,6 +1,12 @@
 import { defineConfig } from 'vite'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
+  plugins: [
+    viteStaticCopy({
+      targets: [{ src: 'assets', dest: '.' }],
+    }),
+  ],
   base: './',
   build: {
     outDir: 'dist',
@@ -8,7 +14,6 @@ export default defineConfig({
   },
   server: {
     fs: {
-      // Allow serving files from project root (assets/ folder lives here)
       allow: ['.'],
     },
   },
