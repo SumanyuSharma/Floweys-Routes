@@ -68,11 +68,9 @@ export const ENDINGS: EndingData[] = [
     floweyRevealLines: [
       'You see how easily they hurt themselves.',
       'So you make the hurting harder.',
-      'Then rare.',
-      'Then impossible.',
+      'Then rare. Then impossible.',
       'Then optional only in stories.',
-      'Then illegal',
-      'Not because you are cruel.',
+      'Then illegal. Not because you are cruel.',
       'Just because you are better at it.',
       'The crown is gentle. The crown is final.',
     ],

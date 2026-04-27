@@ -56,7 +56,7 @@ export const TRUELAB_ENCOUNTER: EncounterData = {
     { speaker: 'alphys', text: 'No pressure.' },
     { speaker: 'alphys', text: 'But the machine likes you.' },
     { speaker: 'alphys', text: 'Of course it does.' },
-    {speaker: 'narrator', text: 'Does a Copy have a soul? What about a copy of a COPY? What about a bad copiy?' },
+    {speaker: 'narrator', text: 'Does a Copy have a soul? What about a copy of a COPY? What about a bad copy?' },
   ],
 
   choicePrompt: 'What do you owe an incomplete Copy?',

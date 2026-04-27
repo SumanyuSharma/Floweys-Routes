@@ -167,7 +167,7 @@ export class FinalMirrorScene extends Phaser.Scene {
     this.state = 'flowey_closing'
     const combined = this.ending.floweyRevealLines.join('\n')
     this.dialogueSystem.start(
-      [{ speaker: 'flowey', text: combined }],
+      [{ speaker: 'floweyReveal', text: combined }],
       () => this.startTransformation(),
     )
   }

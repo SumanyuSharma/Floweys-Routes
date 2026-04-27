@@ -63,7 +63,7 @@ export class DebriefScene extends Phaser.Scene {
 
     const headerText = isSelfDestruct
       ? 'SELF-DESTRUCTION — UNPLAYABLE'
-      : 'YOU REACHED: ' + debrief.subtitle.replace('You reached: ', '').toUpperCase()
+      : debrief.subtitle.replace('You reached: ', '').toUpperCase()
 
     const imgSrc           = `assets/characters/${IMAGE_MAP[route]}`
     const sourceNoteLinked = debrief.sourceNote.replace(BOOK_PHRASE, BOOK_ANCHOR)

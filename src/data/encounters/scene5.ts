@@ -72,9 +72,9 @@ export const NEWHOME_ENCOUNTER: EncounterData = {
   postChoiceLines: {
     // A — Keep the mage in the castles. Miracles are safer within walls.
     0: [
-      { speaker: 'asgore', text: 'The tower.' },
+      { speaker: 'asgore', text: 'The castle.' },
       { speaker: 'asgore', text: 'Yes.' },
-      { speaker: 'asgore', text: 'A tower is a cage with better architecture.' },
+      { speaker: 'asgore', text: 'A castle is a cage with better architecture.' },
       { speaker: 'narrator', text: 'The room behind him opens.' },
       { speaker: 'narrator', text: 'Glass. Soft light. No handle on the inside.' },
       { speaker: 'asgore', text: 'I am very sorry.' },

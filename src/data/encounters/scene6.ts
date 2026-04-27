@@ -34,7 +34,7 @@ export const FINALMIRROR_ENCOUNTER: EncounterData = {
     { speaker: 'flowey', text: 'Then they were real too.' },
     { speaker: 'flowey', text: 'If they were real...' },
     { speaker: 'flowey', text: 'Then what did you want for them?' },
-    { speaker: 'flowey', text: 'For me? Friend.' },
+    { speaker: 'flowey', text: 'For me?.... Friend.' },
   ],
 
   choicePrompt: 'If this was real, what future would you want for them?',

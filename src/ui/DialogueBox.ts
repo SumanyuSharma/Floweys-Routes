@@ -17,6 +17,8 @@ interface BoxColors {
 const BOX_STYLES: Record<BoxStyle, BoxColors> = {
   standard:    { border: COLORS.dialogBorder,      fill: COLORS.dialogFill,      text: COLORS.standardText,    alpha: 0.92 },
   flowey:      { border: COLORS.floweyBorder,       fill: COLORS.floweyFill,      text: COLORS.floweyText,      alpha: 1    },
+  floweyReveal: { border: COLORS.floweyBorder,      fill: COLORS.floweyFill,      text: COLORS.floweyText,      alpha: 1,
+    y: 384, h: 196 },
   asrielChild: { border: COLORS.asrielChildBorder,  fill: COLORS.asrielChildFill, text: COLORS.asrielChildText, alpha: 1    },
   supreme:     { border: 0xffd700,                  fill: 0x050505,               text: '#ffd700',              alpha: 1    },
   // Ambient: positioned at the top of the screen — echo flowers, amalgamate voices

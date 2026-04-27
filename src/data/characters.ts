@@ -28,6 +28,15 @@ export const CHARACTERS: Record<CharacterKey, CharacterConfig> = {
     boxStyle:       'flowey',
     typingSoundKey: 'snd_floweytalk1',
   },
+  floweyReveal: {
+    key:            'floweyReveal',
+    displayName:    'FLOWEY',
+    spriteAsset:    'char_flowey',
+    textColor:      '#f5e642',
+    nameplateColor: 0x0a1a00,
+    boxStyle:       'floweyReveal',
+    typingSoundKey: 'snd_floweytalk1',
+  },
   toriel: {
     key:            'toriel',
     displayName:    'TORIEL',

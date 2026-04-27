@@ -25,13 +25,14 @@ export interface GameStateData {
 
 // ─── Box Style ────────────────────────────────────────────────────────────────
 
-export type BoxStyle = 'standard' | 'flowey' | 'asrielChild' | 'supreme' | 'ambient'
+export type BoxStyle = 'standard' | 'flowey' | 'floweyReveal' | 'asrielChild' | 'supreme' | 'ambient'
 
 // ─── Characters ───────────────────────────────────────────────────────────────
 
 export type CharacterKey =
   | 'frisk'
   | 'flowey'
+  | 'floweyReveal'
   | 'toriel'
   | 'sans'
   | 'papyrus'

@@ -80,7 +80,7 @@ export const SNOWDIN_ENCOUNTER: EncounterData = {
     2: [
       { speaker: 'papyrus', text: 'MANY VALVES! MANY CHOICES!' },
       { speaker: 'papyrus', text: 'THE TOWN IS NOW A DEMOCRACY OF KNOBS!' },
-      { speaker: 'sans', text: 'could work. probably won\'t' },
+      { speaker: 'sans', text: 'could work. probably won\'t.' },
     ],
     // D — Keep the square warm. More efficient that way.
     3: [
