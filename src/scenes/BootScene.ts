@@ -15,6 +15,7 @@ export class BootScene extends Phaser.Scene {
       this.load.image(`opening_${i}`, `assets/ui/Opening_${i}.png`)
     }
     this.load.audio('music_opening', 'assets/audio/Once Upon a Time - Opening.mp3')
+    this.load.audio('music_debrief', 'assets/audio/Megalovania-End.mp3')
 
     // ── Backgrounds ────────────────────────────────────────────
     this.load.image('bg_ruins',       'assets/rooms/ruins.png')

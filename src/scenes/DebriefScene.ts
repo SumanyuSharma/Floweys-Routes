@@ -39,9 +39,10 @@ const BOOK_PHRASE = 'Life 3.0 by Max Tegmark'
 const BOOK_ANCHOR = `<a href="https://www.amazon.co.uk/Life-3-0-Being-Artificial-Intelligence/dp/024123719X" target="_blank" rel="noopener" style="color:#aaaaff;text-decoration:underline;">${BOOK_PHRASE}</a>`
 
 export class DebriefScene extends Phaser.Scene {
-  private overlay:            HTMLDivElement | null = null
-  private originalRoute:      RouteKey              = 'libertarian'
-  private browsingOtherRoute: boolean               = false
+  private overlay:            HTMLDivElement | null          = null
+  private originalRoute:      RouteKey                       = 'libertarian'
+  private browsingOtherRoute: boolean                        = false
+  private music:              Phaser.Sound.BaseSound | null  = null
 
   constructor() {
     super({ key: 'Debrief' })
@@ -53,10 +54,13 @@ export class DebriefScene extends Phaser.Scene {
     this.originalRoute      = route
     this.browsingOtherRoute = false
     this.mountOverlay(route, getDebrief(route))
+
+    this.music = this.sound.add('music_debrief', { volume: 0.45, loop: true })
+    this.music.play()
   }
 
-  shutdown(): void { this.removeOverlay() }
-  destroy():  void { this.removeOverlay() }
+  shutdown(): void { this.stopMusic(); this.removeOverlay() }
+  destroy():  void { this.stopMusic(); this.removeOverlay() }
 
   private mountOverlay(route: AnyRouteKey, debrief: ReturnType<typeof getDebrief>): void {
     const isSelfDestruct = route === 'selfDestruction'
@@ -198,7 +202,15 @@ export class DebriefScene extends Phaser.Scene {
     this.overlay = div
   }
 
+  private stopMusic(): void {
+    if (!this.music) return
+    this.music.stop()
+    this.music.destroy()
+    this.music = null
+  }
+
   private handleReset(): void {
+    this.stopMusic()
     this.removeOverlay()
     GameState.reset()
     this.scene.start('Title')
